@@ -15,7 +15,7 @@ class Sidl < Formula
   end
 
   on_linux do
-    if Hardware::CPU.amd? && Hardware::CPU.is_64_bit?
+    if Hardware::CPU.intel?
       url "https://github.com/kwame-Owusu/sidl/releases/download/v1.0.0/sidl-linux-amd64.tar.gz"
       sha256 "d7f2396ccc03c4d193018d91bb174679d7eac003a9c308d0a4d32abb9545049e"
     end
