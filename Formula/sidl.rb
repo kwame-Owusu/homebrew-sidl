@@ -7,17 +7,17 @@ class Sidl < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kwame-Owusu/sidl/releases/download/v1.0.0/sidl-darwin-arm64.tar.gz"
-      sha256 "e620163f32f84fd69a40d80d178dc1bf47e269817456f6e29442262065ec790c"
+      sha256 "d7dffed21e6b3d737ea16bd86a6b74d54af8e99c2c34f5e7e4e7102c7705bb91"
     else
       url "https://github.com/kwame-Owusu/sidl/releases/download/v1.0.0/sidl-darwin-amd64.tar.gz"
-      sha256 "ad8438989f510cf6aebbb2bc10ca6bc222ec36060f2d0db608dd03c0b0dd5f94"
+      sha256 "320b71e8521f2f82a6ed5f5837c4217cf7a1408d3a6c0965991f272261133adc"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
       url "https://github.com/kwame-Owusu/sidl/releases/download/v1.0.0/sidl-linux-amd64.tar.gz"
-      sha256 "d7f2396ccc03c4d193018d91bb174679d7eac003a9c308d0a4d32abb9545049e"
+      sha256 "30f0179405abf9c433837fc043ac67f1485494513d31b7946be3ec091095eb28"
     end
   end
 
