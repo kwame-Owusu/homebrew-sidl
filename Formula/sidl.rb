@@ -25,7 +25,11 @@ class Sidl < Formula
   end
 
   def install
-    bin.install "sidl"
+    # Install the downloaded binary as 'sidl'
+    bin.install "sidl-darwin-amd64" => "sidl" if OS.mac? && Hardware::CPU.intel?
+    bin.install "sidl-darwin-arm64" => "sidl" if OS.mac? && Hardware::CPU.arm?
+    bin.install "sidl-linux-amd64" => "sidl" if OS.linux? && Hardware::CPU.intel?
+    bin.install "sidl-linux-arm64" => "sidl" if OS.linux? && Hardware::CPU.arm?
   end
 
   test do
